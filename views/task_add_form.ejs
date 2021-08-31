@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <h1>Add new task</h1>
+    <div>
+      <form action="/tasks/add" method="post">
+        <label>
+          Task title
+          <input type="text" name="taskTitle" />
+        </label>
+        <br />
+        <label>
+          Task priority
+          <input type="number" name="taskPriority" />
+        </label>
+        <br />
+        <input type="submit" value="Add new task" />
+      </form>
+    </div>
+  </body>
+</html>

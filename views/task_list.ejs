@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <h1>Tasks list <%=list.length%></h1>
+    <div>
+      <ol>
+        <%for(let task of list){%>
+        <li><%=task.title%> - <%=task.priority%></li>
+        <%}%>
+      </ol>
+    </div>
+  </body>
+</html>
